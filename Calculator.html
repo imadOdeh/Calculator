@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Caluclator</title>
+    <script type="text/javascript" src="MyScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="MyStyle.css">
+</head>
+<body>
+   <div class="main">
+   <div><img width="20" height="20" src="calculator.png"><span style="margin-bottom:20px;"> Caluclator</span></div>
+    <div class="calculator">
+        <div><input type="text" id="txt1" class="display_text" onkeypress="handleEnter(event)"></div>
+            <div>
+                <input type="button" class="calculator_btn" id="btnMC" value="MC">
+                <input type="button" class="calculator_btn" id="btnMR" value="MR">
+                <input type="button" class="calculator_btn" id="btnMS" value="MS">
+                <input type="button" class="calculator_btn" id="btnMplus" value="M+">
+                <input type="button" class="calculator_btn" id="btnMminus" value="M-">
+            </div>
+            <div>
+                <input type="button" class="calculator_btn" id="btnMC2" value="MC">
+                <input type="button" class="calculator_btn" id="btnCE" value="CE" onclick="back()">
+                <input type="button" class="calculator_btn" id="btnC" value="C" onclick="clean()">
+                <input type="button" class="calculator_btn" id="btnMinus_Plus" value="-/+">
+                <input type="button" class="calculator_btn" id="btnMC3" value="MC">
+            </div>
+            <div>
+                <input type="button" class="calculator_btn" id="btn7" value="7" onclick="displaynum(btn7.value)">
+                <input type="button" class="calculator_btn" id="btn8" value="8" onclick="displaynum(btn8.value)">
+                <input type="button" class="calculator_btn" id="btn9" value="9" onclick="displaynum(btn9.value)">
+                <input type="button" class="calculator_btn" id="btnDivide" value="/" onclick="displaynum('/')">
+                <input type="button" class="calculator_btn" id="btnPercent" value="%" onclick="displaynum('%')">
+            </div>
+			<div>
+               <input type="button" class="calculator_btn" id="btn4" value="4" onclick="displaynum(btn4.value)">
+               <input type="button" class="calculator_btn" id="btn5" value="5" onclick="displaynum(btn5.value)">
+               <input type="button" class="calculator_btn" id="btn6" value="6" onclick="displaynum(btn6.value)">
+               <input type="button" class="calculator_btn" id="btnMultiple" value="*" onclick="displaynum('*')">
+               <input type="button" class="calculator_btn" id="btnReverse" value="1/x">
+            </div>
+			
+             <input type="button" class="calculator_btn" id="btn1" value="1" onclick="displaynum(btn1.value)">
+             <input type="button" class="calculator_btn" id="btn2" value="2" onclick="displaynum(btn2.value)">
+             <input type="button" class="calculator_btn" id="btn3" value="3" onclick="displaynum(btn3.value)">
+             <input type="button" class="calculator_btn" id="btnSub" value="-" onclick="displaynum('-')">
+			 <input type="button" class="calculator_btn Equal" id="btnEqual" value="=" onclick="Evalute()">
+			 <div style="width:120px">
+            <input type="button" class="calculator_btn" id="btn0" value="0"  style="width:44px;" onclick="displaynum(btn0.value)">
+            <input type="button" class="calculator_btn" id="btnPoint" value="." onclick="displaynum('.')">
+            <input type="button" class="calculator_btn" id="btnAdd" value="+" onclick="displaynum(btnAdd.value)">
+           </div>
+    </div>
+	</div>
+</body>
+</html>
