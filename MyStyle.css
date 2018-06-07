@@ -1,0 +1,45 @@
+
+        .display_text {
+            font-size: 8pt;
+            padding: 5px;
+			width:117px;
+			margin-top : 2px;
+        }
+        .calculator_btn {
+            width: 20px;
+            height: 20px;
+            font-size: 5pt;
+            cursor: pointer;
+        }
+        .calculator_btn0
+		{
+            width: 40px;
+            height: 20px;
+            font-size: 5pt;
+            cursor: pointer;
+		}
+        .main {
+		    position: fixed;
+			top : 80px;
+			left : 200px;
+            background-color: white;
+			width : 122px;
+			height : auto;
+			margin-left=20px;
+			border : solid black;
+			padding:5px;
+        }
+		.calculator {
+            background-color: #b9cdf5;
+			position: relative;
+			width : 120px;
+			height : auto;
+			padding-left : 2px;
+        }
+		.Equal 
+		{
+		  position: absolute;
+          top: 120px;
+          right: 4px;
+		  height : 43px;
+		}
